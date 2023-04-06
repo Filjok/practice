@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset tool end */
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  transition: all 1s ease-in-out;
+  background-color: #2b2b2b;
+}
+
+.asideNavBar {
+  width: 5vw;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background-image: linear-gradient(#5a5858, #2b2b2b);
+  z-index: 9999;
+}
+.svgHoverAnimation {
+  fill: white;
+  height: 120px;
+  width: 30px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.svgHoverAnimation:hover {
+  fill: rgb(188, 255, 146);
+  transform: translateX(5px);
+}
+.headerImageSection {
+  height: 100vh;
+  width: 95vw;
+  background-color: #2b2b2b;
+  margin-left: 5vw;
+}
+
+.headerImageColOne {
+  background-image: url(../images/headerBgImageRowCol1.jpg);
+  height: 100vh;
+  width: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.carouselSection {
+  margin-left: 50px;
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+}
+.contentPageOne {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  /* background-color: black; */
+}
+.aboutContent {
+  line-height: 30px;
+}
+.cardSection {
+  width: 20rem;
+  height: fit-content;
+}
+.contentPageOne div {
+  padding-top: 100px;
+}
+.contentPageService {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+}
+
+.contactPage {
+  width: 95vw;
+  height: 90vh;
+
+  margin-left: 5vw;
+  position: relative;
+}
+.contactMargin {
+  padding-top: 50px;
+}
+.footerContent {
+  width: 95vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(68, 66, 66);
+}
+.footerIcons {
+  fill: white;
+  width: 30px;
+  height: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.footerContent ul li {
+  margin-inline: 15px;
+}
+
+.footerIcons:hover {
+  fill: rgb(110, 246, 72);
+  transform: translateY(-10px);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1007px) {
+  .carouselSection {
+    display: none;
+  }
+  .cardSection {
+    width: 16rem;
+  }
+  .asideNavBar {
+    width: 7vw;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .asideNavBar {
+    width: 50px;
+  }
+  .contentPageOne {
+    height: fit-content;
+  }
+  .contentPageService {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .cardSection {
+    margin-block: 20px;
+  }
+  .footerIcons {
+    height: 15px;
+
+    width: 25px;
+  }
+  .contactPage {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .headerImageColOne {
+    display: none;
+  }
+  .headerHeadingSection {
+    width: 100%;
+    background-image: url(../images/headerBgImageRowCol1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headerHeadingSection h2 {
+    color: black;
+  }
+}
